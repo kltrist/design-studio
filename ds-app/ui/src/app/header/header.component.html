@@ -1,0 +1,12 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div><a href="" class="navbar-brand">Design Studio</a></div>
+
+    <ul class="navbar-nav">
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/portfolio" class="nav-link">Портфолио</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Выход</a></li>
+    </ul>
+
+  </nav>
+
+</header>

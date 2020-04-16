@@ -1,0 +1,33 @@
+<div align="center" style="color: #4f4f4f;background-color: rgba(238,239,241,1)" class="title_subtitle_holder">
+  <h1><span>Портфолио</span></h1>
+  <span class="subtitle" style='color:#4f4f4f'>проекты дизайн-студии</span>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <div class="row" style="background-color:rgba(238,239,241,1);">
+    <div class="col-sm-6">
+      <div class="card" style="width: 500px;height: 500px;" *ngFor="let portfolio of retrievedPortfoliosEven;">
+        <img class="card-img-top" [src]="portfolio.picBytes" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{portfolio.name}}</h5>
+          <p class="card-text">{{portfolio.description}}</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-sm-6">
+      <div class="card" style="width: 500px;height: 500px;" *ngFor="let portfolio of retrievedPortfoliosOdd">
+        <img class="card-img-top" [src]="portfolio.picBytes" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{portfolio.name}}</h5>
+          <p class="card-text">{{portfolio.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

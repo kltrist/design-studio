@@ -17,6 +17,11 @@
             <artifactId>ds-service</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>by.grsu</groupId>
+            <artifactId>ds-security</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
