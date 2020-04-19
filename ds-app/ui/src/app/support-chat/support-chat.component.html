@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Spring Boot WebSocket</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div style="color: #4f4f4f;background-color: rgba(238,239,241,1); text-align: center">
+  <h2>{{title}}</h2>
+  <h5>{{description}}</h5>
+</div>
+
+<div class="container" style="width: 400px; margin-top: 20px;">
+
+  <table id="conversation" class="table table-striped" style="margin-top: 20px;">
+    <thead>
+    <tr>
+      <th>Chat</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let message of messages">
+    <tr>
+      <td>
+        <small>{{message.time}}</small>
+        <p>{{message.username}}: {{message.content}}</p></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <form class="form-inline" style="margin-top: 20px;">
+    <div class="form-group">
+      <label for="name"></label>
+      <input type="text" id="name" name="name" class="form-control" [(ngModel)]="content"/>
+    </div>
+    <button id="send" class="btn btn-default" type="button" (click)="sendMessage()">Send</button>
+  </form>
+
+</div>
+</body>
+
+</html>

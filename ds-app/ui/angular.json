@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -82,7 +83,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -132,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "employee-management"
+  "defaultProject": "employee-management",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

@@ -5,13 +5,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>ds-app</module>
-        <module>ds-consultation</module>
         <module>ds-security</module>
         <module>ds-controller</module>
         <module>ds-service</module>
         <module>ds-repository</module>
         <module>ds-domain</module>
         <module>ds-exception</module>
+        <module>ds-support-chat</module>
+        <module>ds-migration</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -41,6 +42,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

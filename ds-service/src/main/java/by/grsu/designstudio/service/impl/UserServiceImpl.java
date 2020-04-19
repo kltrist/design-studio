@@ -1,6 +1,6 @@
 package by.grsu.designstudio.service.impl;
 
-import by.grsu.designstudio.domain.User;
+import by.grsu.designstudio.portfolio.domain.User;
 import by.grsu.designstudio.repository.UserRepository;
 import by.grsu.designstudio.service.UserService;
 import org.springframework.stereotype.Service;

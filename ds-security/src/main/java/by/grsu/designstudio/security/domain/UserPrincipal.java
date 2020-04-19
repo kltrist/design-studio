@@ -1,6 +1,6 @@
 package by.grsu.designstudio.security.domain;
 
-import by.grsu.designstudio.domain.User;
+import by.grsu.designstudio.portfolio.domain.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

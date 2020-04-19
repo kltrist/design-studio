@@ -4,6 +4,7 @@
 
     <ul class="navbar-nav">
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/portfolio" class="nav-link">Портфолио</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/support" class="nav-link">Консультация</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Выход</a></li>
     </ul>
 

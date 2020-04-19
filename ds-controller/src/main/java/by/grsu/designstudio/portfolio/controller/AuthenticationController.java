@@ -1,4 +1,4 @@
-package by.grsu.designstudio.controller;
+package by.grsu.designstudio.portfolio.controller;
 
 import by.grsu.designstudio.security.impl.JwtTokenProvider;
 import by.grsu.designstudio.service.domain.AuthenticationRequestDTO;

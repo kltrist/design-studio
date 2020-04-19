@@ -38,6 +38,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {PortfolioService} from './portfolio.service';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {HomeComponent} from './home/home.component';
+import {SupportChatComponent} from "./support-chat/support-chat.component";
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import {HomeComponent} from './home/home.component';
     LoginComponent,
     LogoutComponent,
     PortfolioComponent,
+    SupportChatComponent,
     HomeComponent
   ],
   imports: [

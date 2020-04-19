@@ -1,6 +1,6 @@
-package by.grsu.designstudio.controller;
+package by.grsu.designstudio.portfolio.controller;
 
-import by.grsu.designstudio.domain.PortfolioItem;
+import by.grsu.designstudio.portfolio.domain.PortfolioItem;
 import by.grsu.designstudio.service.PortfolioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

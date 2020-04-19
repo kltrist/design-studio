@@ -1,6 +1,6 @@
-package by.grsu.designstudio.controller;
+package by.grsu.designstudio.portfolio.controller;
 
-import by.grsu.designstudio.domain.User;
+import by.grsu.designstudio.portfolio.domain.User;
 import by.grsu.designstudio.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

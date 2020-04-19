@@ -1,4 +1,4 @@
-package by.grsu.designstudio.domain;
+package by.grsu.designstudio.portfolio.domain;
 
 import org.hibernate.annotations.GenericGenerator;
 

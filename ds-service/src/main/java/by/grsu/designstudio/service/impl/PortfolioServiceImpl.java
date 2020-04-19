@@ -1,7 +1,7 @@
 package by.grsu.designstudio.service.impl;
 
-import by.grsu.designstudio.domain.PortfolioItem;
 import by.grsu.designstudio.exception.domain.ObjectNotFoundException;
+import by.grsu.designstudio.portfolio.domain.PortfolioItem;
 import by.grsu.designstudio.repository.PortfolioRepository;
 import by.grsu.designstudio.service.PortfolioService;
 import org.springframework.beans.factory.annotation.Autowired;

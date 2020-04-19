@@ -1,6 +1,6 @@
 package by.grsu.designstudio.service;
 
-import by.grsu.designstudio.domain.PortfolioItem;
+import by.grsu.designstudio.portfolio.domain.PortfolioItem;
 
 import java.io.IOException;
 import java.util.List;

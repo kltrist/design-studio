@@ -1,0 +1,1 @@
+INSERT INTO design_studio.ds_user (id, age, name, password, username) VALUES ('1', 21, 'dima', '$2a$10$.Slsjwx/1OGBXB9SRw8yX.5kP0iI9fu/ouNGWUAdgSzDxm9kAdt8O', 'dmtr');

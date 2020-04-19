@@ -1,6 +1,6 @@
 package by.grsu.designstudio.security.impl;
 
-import by.grsu.designstudio.domain.User;
+import by.grsu.designstudio.portfolio.domain.User;
 import by.grsu.designstudio.repository.UserRepository;
 import by.grsu.designstudio.security.domain.UserPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;

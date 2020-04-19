@@ -1,7 +1,7 @@
 package by.grsu.designstudio.security.impl;
 
-import by.grsu.designstudio.domain.Role;
 import by.grsu.designstudio.exception.domain.JwtAuthenticationException;
+import by.grsu.designstudio.portfolio.domain.Role;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwtException;
