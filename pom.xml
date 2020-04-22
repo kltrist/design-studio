@@ -6,25 +6,21 @@
     <modules>
         <module>ds-app</module>
         <module>ds-security</module>
-        <module>ds-controller</module>
-        <module>ds-service</module>
-        <module>ds-repository</module>
-        <module>ds-domain</module>
         <module>ds-exception</module>
         <module>ds-support-chat</module>
-        <module>ds-migration</module>
+        <module>ds-portfolio</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>by.grsu</groupId>
     <artifactId>design-studio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>design-studio</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Design studio app</description>
 
     <properties>
         <java.version>1.8</java.version>

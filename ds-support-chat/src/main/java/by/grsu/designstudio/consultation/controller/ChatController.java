@@ -12,11 +12,11 @@ import java.util.UUID;
 @Controller
 public class ChatController {
 
-    @MessageMapping("/hello")
-    @SendTo("/topic/hi")
+    @MessageMapping("/chat")
+    @SendTo("/topic/messages")
     public Message sendMessage(@RequestParam(name = "content") String content) {
         final String messageId = UUID.randomUUID().toString();
 
-        return new Message(messageId, "admin", content);
+        return new Message(messageId, "dmtr", content);
     }
 }

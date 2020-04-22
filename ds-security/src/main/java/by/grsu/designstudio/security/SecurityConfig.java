@@ -1,7 +1,9 @@
 package by.grsu.designstudio.security;
 
-import by.grsu.designstudio.security.impl.JwtConfigurer;
-import by.grsu.designstudio.security.impl.JwtTokenProvider;
+import by.grsu.designstudio.security.controller.AuthenticationController;
+import by.grsu.designstudio.security.domain.repo.UserRepository;
+import by.grsu.designstudio.security.service.JwtConfigurer;
+import by.grsu.designstudio.security.service.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -18,7 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
 @Configuration
-@ComponentScan(basePackageClasses = JwtTokenProvider.class)
+@ComponentScan(basePackageClasses = {JwtTokenProvider.class, UserRepository.class, AuthenticationController.class})
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsService userDetailsService;
@@ -55,7 +57,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/login").permitAll()
-//                .anyRequest().authenticated()
                 .and()
                 .exceptionHandling()
                 .and()

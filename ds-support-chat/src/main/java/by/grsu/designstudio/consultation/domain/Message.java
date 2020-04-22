@@ -1,13 +1,16 @@
 package by.grsu.designstudio.consultation.domain;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Message {
+
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("HH:mm dd.MM.yyyy ");
 
     private String id;
     private String username;
     private String content;
-    private LocalDateTime time = LocalDateTime.now();
+    private String time;
 
     public Message() {
     }
@@ -16,6 +19,7 @@ public class Message {
         this.id = id;
         this.username = username;
         this.content = content;
+        this.time = LocalDateTime.now().format(FORMATTER);
     }
 
     public String getId() {
@@ -42,11 +46,11 @@ public class Message {
         this.content = content;
     }
 
-    public LocalDateTime getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(LocalDateTime time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

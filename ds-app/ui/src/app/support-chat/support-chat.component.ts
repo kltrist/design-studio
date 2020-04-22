@@ -39,7 +39,7 @@ export class SupportChatComponent {
       _this.setConnected(true);
       console.log('Connected: ' + frame);
 
-      _this.stompClient.subscribe('/topic/hi', function (message) {
+      _this.stompClient.subscribe('/topic/messages', function (message) {
         _this.showMessage(JSON.parse(message.body));
       });
     });
@@ -56,7 +56,7 @@ export class SupportChatComponent {
 
   sendMessage() {
     this.stompClient.send(
-      '/jsa/hello',
+      '/jsa/chat',
       {},
       this.content
     );
